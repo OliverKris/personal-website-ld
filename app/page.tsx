@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import FooterCopyright from "./components/FooterCopyright";
 import { BriefcaseBusiness } from 'lucide-react';
 
@@ -30,11 +31,11 @@ export default function Home() {
           {/* Nav block */}
           <nav>
             <ul className="flex flex-col items-center gap-3">
-              <li>Home</li>
-              <li>About</li>
-              <li>Projects</li>
-              <li>Resume</li>
-              <li>Contact</li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About</Link></li>
+              <li><Link href="/projects">Projects</Link></li>
+              <li><Link href="/resume">Resume</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>
           </nav>
 
